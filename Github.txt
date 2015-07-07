@@ -2,3 +2,9 @@ Creating new repository:
 	1.  Create repository on GitHub
 	2.  Copy repository link and use this command in Git Bash 'git clone https://github.com/MagnusHvidsten/WallOfKnowledge.git'
 		which will create a folder where you currently are which is linked to that github repository. 
+
+Adding contributions to existing repositories
+	1.  Be in the right folder on git bash.
+	2.  Git add --all
+	3.  Git commit -m'comments'
+	4.  Git push
