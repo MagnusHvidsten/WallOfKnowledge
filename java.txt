@@ -1,15 +1,31 @@
-Compile time error - the java compiler can't compile the code, often because of syntax errors. Typical candidates:
-	- missing brackets
-	- missing semicolons
-	- access to private fields in other classes
-	- missing classes on the classpath (at compile time)
+Access control
+	- The different access levels determine who can use a particular field or class.
+	- There are four different levels; 
+		1. public which can be accessed by Class, Package, Subclass and world (inbetween packages)
+		2. protected which can be accessed by Class, Package and Subclass (not inbetween packages)
+		3. no modifier which can be accessed by Class and Package
+		4. private which can only be accessed by the Class
+	- If other programmers can access your class, you want to make sure that misuse does not happen
+		therefore the most restrictive access level should be used. Use Private unless you don't have a 
+		good reason not to.
+Errors
+	Compile time error - the java compiler can't compile the code, often because of syntax errors. Typical candidates:
+		- missing brackets
+		- missing semicolons
+		- access to private fields in other classes
+		- missing classes on the classpath (at compile time)
 
-Runtime error - the code did compile, can be executed but crashes at some point, like you have a division by zero.
-	- using variable that are actually null (may cause NullPointerException)
-	- using illegal indexes on arrays
-	- accessing ressources that are currently unavailable (missing files, ...)
-	- missing classes on the classpath (at runtime)
+	Runtime error - the code did compile, can be executed but crashes at some point, like you have a division by zero.
+		- using variable that are actually null (may cause NullPointerException)
+		- using illegal indexes on arrays
+		- accessing ressources that are currently unavailable (missing files, ...)
+		- missing classes on the classpath (at runtime)
 
+Exceptions
+	- An exception can be enclosed in a try catch block, or send the exception the next method higher up in the call stack
+	- more
+
+Functionalities
 Interface constant
 	- An interface constant is implicitly public, static and final. 
 	- such interface constants can be referenced in two ways:
@@ -31,3 +47,17 @@ Interface constant
 		        i = Foo141.k; 				 //	Work
 		    } 
 		}
+Static methods
+	- rule of thumb is that if it makes sense to call this method even if no object has been created yet, use static.
+	other cases, follow this:
+	- If you are writing utility classes and they are not supposed to be changed.
+	- If the method is not using any instance variable.
+	- If any operation is not dependent on instance creation.
+	- If there is some code that can easily be shared by all the instance methods, extract that code into a static method.
+	- If you are sure that the definition of the method will never be changed or overridden. As static methods can not be overridden
+
+Functions I should know by heart:
+	- Arrays.toString(arr)				Converts array to string
+	- Arrays.equals(arr1, arr2) 		Returns true if arr1 and arr2 are equal
+	- Arrays.sort(arr)					Sorts the array
+	
