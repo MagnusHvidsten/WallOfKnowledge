@@ -26,6 +26,9 @@ Exceptions
 	- more
 
 Functionalities
+Interface
+	- Interface is the 'interface' between the object and the world. Just like buttons are the interface between you and an apperatus.
+	- 
 Interface constant
 	- An interface constant is implicitly public, static and final. 
 	- such interface constants can be referenced in two ways:
@@ -56,8 +59,11 @@ Static methods
 	- If there is some code that can easily be shared by all the instance methods, extract that code into a static method.
 	- If you are sure that the definition of the method will never be changed or overridden. As static methods can not be overridden
 
-Functions I should know by heart:
+methods I should know by heart:
 	- Arrays.toString(arr)				Converts array to string
 	- Arrays.equals(arr1, arr2) 		Returns true if arr1 and arr2 are equal
 	- Arrays.sort(arr)					Sorts the array
+
+	- HashMap<Integer, String[]> map = new HashMap<Integer, String[]>();  // Creates a hashmap to store all students in
+	  For(String s : arr) map.put(s.getID(), s);						  // maps to certain index based of unique student ID
 	

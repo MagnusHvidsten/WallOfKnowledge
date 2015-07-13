@@ -1,0 +1,2 @@
+cygwin notes:
+	- Downloaded wget from the web package as it was needed for the Django tutorial: https://www.youtube.com/watch?v=9Cle5Xtegv4&list=PLDRmwCnTg3GZslEmCXwV0FJ8EdLlzNbjq&index=2
