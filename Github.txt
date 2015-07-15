@@ -17,3 +17,4 @@ Changing authentication for push and pull
 	2. type git config remote.origin.url https://USERNAME:PASSWORD@github.com/MagnusHvidsten/MagnusHvidsten.github.io.git
 	3. ommit :PASSOWORD if you only want to be promped by password
 	
+ 
