@@ -1,1 +1,3 @@
-python.txt
+Python useful facts:
+ - Python has been widely used by research scientists, so there are therefor many libraries developed for the sake of doing reserach. That makes it an attractive language for developers as working with big data and data mining has become common outside research.
+ 

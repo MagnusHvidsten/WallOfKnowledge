@@ -1,0 +1,41 @@
+Types of bugs:
+	- Crash bug
+	- Memory: memory use or memory leak bug
+	- CPU: bug about slowness or high CPU usage
+	- Hang
+	- arithmetic bugs
+		- Division by zero
+		- arithmetic overflow or underflow: value is too large for a register or storage location can store or represent
+		- loss of precision because of rounding or numerically unstable algorithms
+	- logical bugs
+		- infinite loop or infinite recursion
+		- off-by-one error, counting one to many or one to few when looping
+	- syntax error
+		- using = instead or == or using ++i instead of i++
+	- resource bugs
+		- null pointer dereference 
+		- using an unitialized variable
+		- using an otherwise valid operation on an wrong data type
+		- access violations
+		- resource leaks; when a finite system resource such as memory or file handles become exhausted by repeated allocation without release
+		- buffer overflow; when a program tries to store data beyond it's allocated storage. May lead to access violation or storage violation, and are a source of security vulnerability
+		- excessive recustion though logically valid causes stack overflow. 
+		- Use-after-free where a pointer is used after the system has freed the memory it references. 
+		- double free, when free() is called more than once on the same memory address
+	- Multi-threading programming bugs
+		- Deadlock; when A can continue until B is done, but B can continue until A is done. 
+	 	- Race condition; When a program does not execute instructions in the order the programmer intended to. 
+	 	- concurrency errors; shared resources
+	- Interfacing bugs
+	 	- Incorrect API usage.
+	 	- Incorrect protocol implementation.
+	 	- Incorrect hardware handling.
+	 	- Incorrect assumptions of a particular platform.
+	 	- incompatible systems; backwards or forwards compatibillity problems. 
+	- Preformance bugs
+		- too high computational complexity of algorithm
+		- Random disk access or memory access
+	- Teamworking bugs
+		- Unpropogated updates; changing myAdd function but forgets to change mySubtract which uses the same algorithm
+		- out of date comments which no longer hold true
+		- difference between documentation and actual product.

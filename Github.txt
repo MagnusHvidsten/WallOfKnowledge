@@ -11,3 +11,9 @@ Adding contributions to existing repositories
 	2.  Git add --all
 	3.  Git commit -m'comments'
 	4.  Git push
+
+Changing authentication for push and pull
+	1. type git config -l and check what is under remote.origin.url
+	2. type git config remote.origin.url https://USERNAME:PASSWORD@github.com/MagnusHvidsten/MagnusHvidsten.github.io.git
+	3. ommit :PASSOWORD if you only want to be promped by password
+	
