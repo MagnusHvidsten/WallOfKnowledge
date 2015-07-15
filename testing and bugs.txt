@@ -39,3 +39,15 @@ Types of bugs:
 		- Unpropogated updates; changing myAdd function but forgets to change mySubtract which uses the same algorithm
 		- out of date comments which no longer hold true
 		- difference between documentation and actual product.
+
+Sequence of writing a test case:
+	1. Test case name
+	2. Description of test case
+	3. Steps, description and actions that need to be performed
+	4. Expected results to be used to compare with actual results
+
+If there is not enough time for thorough test, a risk analysis should be done and speak with stakeholders to find priorities. Performence focused on the end user should be prioritized.
+
+preformence testing: Testing the appications efficiency.
+
+Load testing: Testing the application with certain user loads, which gives us insight to what is happening from the users perspective. 
