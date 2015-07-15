@@ -51,3 +51,4 @@ If there is not enough time for thorough test, a risk analysis should be done an
 preformence testing: Testing the appications efficiency.
 
 Load testing: Testing the application with certain user loads, which gives us insight to what is happening from the users perspective. 
+ 
