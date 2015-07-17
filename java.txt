@@ -67,3 +67,31 @@ methods I should know by heart:
 	- HashMap<Integer, String[]> map = new HashMap<Integer, String[]>();  // Creates a hashmap to store all students in
 	  For(String s : arr) map.put(s.getID(), s);						  // maps to certain index based of unique student ID
 	
+Generating random numbers:
+	- Random random = new Random()
+	- int i = random.nextInt(k) // produces a random value between 0 and k, not including k.
+
+Final keyword
+	- if applied to a class, the class cannot be subclassed
+	- if applied to a method, the method cannot be overwritten by a subclass
+	- if applied to a variable, the variables value cannot be changed once initialized
+
+Polymorphism
+	- in programs that use inheritance
+	- public interface Vegetarian{}
+	  public class Animal{}
+	  public class Deer extends Animal implements Vegetarian{}
+
+	  The deer class is considered polymorphic as it can be multiple things:
+	  1. deer IS A Vegetarian
+	  2. deer IS A Animal
+	  3. deer IS A deer
+	  (4. deer IS A object)
+
+	- The capability of a method to do different things (through method overloading or method overriding) depending on the object that it is operation on. 
+
+Method overloading
+	- When a class has two methods of the same name, but differs in either
+		1. number of parameters
+		2. Data type of parameters
+		3. Sequence of data type parameters
