@@ -95,3 +95,20 @@ Method overloading
 		1. number of parameters
 		2. Data type of parameters
 		3. Sequence of data type parameters
+
+Abstract classes
+	- cannot be instanciated.
+	- abstract classes should be used instead of interfaces when there is a strong relationship between the class in question and the classes that will extend it. eg. public abstract class Animal{} since it has a strong relationship with public class Dog{}
+	- Abstract classes can hold complete method implementations, but they are subject to change through either override or overwrite
+	- Abstract classes can contain abstract methods which have no body (eg. protected abstract void car(String logo);)
+		- If a subclass does not implement all the abstract methods, it too must be abstract
+
+Constructor
+	- Constructors are invoked to create an object from the class blueprint
+	- All classes must have a constructor. Do you not explicitly define one, a default empty one will be generated. 
+	- Can be of any access control (public, protected, no modifier or private)
+
+superclass/subclass interactions
+	- Let Dog extend Animal
+		- if Animal a = new Dog(); then a is declared to be of type Animal and methods unique to Dog cannot be executed on object a. If attempted, it will cause a compile time error.
+		- the statement 'return (a instanceof Dog)' will return true
