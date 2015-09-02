@@ -16,5 +16,46 @@ Changing authentication for push and pull
 	1. type git config -l and check what is under remote.origin.url
 	2. type git config remote.origin.url https://USERNAME:PASSWORD@github.com/MagnusHvidsten/MagnusHvidsten.github.io.git
 	3. ommit :PASSOWORD if you only want to be promped by password
+
+Adding multiple files of same type
+	git add '*.txt'         <- don't forget the quotes!
+
+staged files are files we have told git that are ready to be committed (add)
+we can unstage files by using the
+	git reset octofamily/octodog.txt 
+command. Checking out a commit makes the entire working directory match that commit.
+	git checkout octocat.txt
+this gets rid off all changes since the last commit for octocat.txt
 	
- 
+ git init	
+ 	initializes a git repository
+
+ git status
+ 	shows the current status of your project
+
+ git log
+ 	journal that remembers all changes committed in the order committed
+
+ git push -u NAME BRANCHNAME(master)
+ 	-u tells git to remember the parameters so we can for example just run 'git push' next time
+
+ git pull origin master
+ 	other people might have pulled, changed and committed again. This will pull down their changes
+
+ git diff HEAD
+ 	displays the difference between between our most recent committ (hence the HEAD pointer) and what we pulled down.
+
+ git branch clean_up
+ 	creates a branch called 'clean_up' where we can do work. This branch can be merged later on to the master branch.
+ 	You do not automatically switch to the new branch, you have to do so like this:
+
+ git checkout <branch> 
+ 	this switches branch.
+
+ git rm '*.txt'
+ 	removes all txt files from disk and stages the removal too
+
+ git merge clean_up
+ 	merges clean_up into the branch you are in. if branch is done, you might want to delete it
+
+ git branch -d clean_up

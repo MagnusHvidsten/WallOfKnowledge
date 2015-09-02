@@ -1,0 +1,9 @@
+Shell scripts
+
+Definition: a file(usually a text editor containing ASCII text) containing a series of commands. The shell reads this file and carries out the commands as if it was entered directly into the command line. 
+
+Three basic steps:
+1. write the script
+2. Give shell permission to execute it
+3. put it somewhere shell can find it
+
