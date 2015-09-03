@@ -1,1 +1,23 @@
 Network Protocols
+
+Definition: The rules for successful communication between two parties
+
+Rules:
+1. Only one talks at the time
+2. A response is expected
+3. specific messages expect specific responses 
+
+For example a mac and a web server:
+	1. mac asks if it has permission to connect
+	2. servers responds yes (or no)
+	3. mac requests GET file name.org/index.php
+	4. server sends file
+For this to be successful, both the mac and the server needs to follow the same protocol.
+
+These rules depend on the format and order of protocols. Following the same dialog, the mac cannot ask for a file before it asks for permission
+
+Given an URL such as http://www.web.org/index.php, 
+	http(Hyper Text Transfer Protocol) is a protocol and the foundation of communication for the World Wide Web.
+	www.web.org is the server name
+	index.php is the file name on the server. 
+So the logic goes like this: Ask for the index.php file from the www.web.org server using the http protocol
