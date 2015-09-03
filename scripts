@@ -4,6 +4,9 @@ Definition: a file(usually a text editor containing ASCII text) containing a ser
 
 Three basic steps:
 1. write the script
+	use nano or some other text editor 
 2. Give shell permission to execute it
+	chmod 755 filename (755 gives me read write and execute permissions, others can only read and execute. 700 gives private)
 3. put it somewhere shell can find it
+	
 
